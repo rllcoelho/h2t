@@ -9,7 +9,7 @@ def help():
     print('''Output explanation:
     {b}{g}[+]{reset} Good headers. Already used in your website. Good job!
     {b}{y}[+]{reset} Good headers. We recommend applying it
-    {b}{r}[-]{reset} Bad headers. We recommend remove it\n'''.format(b=Style.BRIGHT, g=Fore.GREEN, y=Fore.YELLOW, r=Fore.RED, reset=Style.RESET_ALL))
+    {b}{r}[-]{reset} Bad headers. We recommend remove it\n'''.format(b=Style.BRIGHT, g=Fore.GREEN, y=Fore.BLUE, r=Fore.RED, reset=Style.RESET_ALL))
 
 
 def banner(b):
@@ -45,7 +45,7 @@ def print_line(message, level=1, category = None, title = None, status=False):
         color = Fore.GREEN
         pre = '[+] '
     elif sts == 'touse':
-        color = Fore.YELLOW
+        color = Fore.BLUE
         pre = '[+] '
     elif sts == 'toremove':
         color = Fore.RED
